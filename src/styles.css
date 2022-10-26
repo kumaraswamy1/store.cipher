@@ -1,0 +1,169 @@
+@import url("https://pigment.netlify.app/CSS/component.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #ffc51e;
+  --secondary-color: #2b70e4;
+}
+
+button {
+  background-color: var(--primary-color);
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.btn-outline {
+  background-color: var(--primary-color);
+  border: white;
+}
+.btn-outline a {
+  color: black;
+}
+
+.cart-quantity {
+  display: flex;
+  flex-direction: row;
+}
+
+.btn-fill {
+  width: -webkit-fill-available;
+}
+.container {
+  width: 60%;
+  margin: 1em auto;
+  padding: 1em;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.container-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.container-img {
+  width: 6rem;
+  height: 7rem;
+}
+.container-name {
+  text-overflow: ellipsis;
+}
+
+.wishlist-icon {
+  fill: black;
+}
+
+.conatiner-detail-content {
+  padding: 1rem;
+  text-align: center;
+  font-weight: normal;
+}
+
+.item-detail {
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 20rem;
+  background-color: rgba(255, 255, 255, 0.26);
+  margin: 4rem auto;
+  padding: 1rem;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 0.001em solid var(--primary-color);
+}
+form .form-input {
+  display: block;
+  height: 50px;
+  width: 100%;
+  padding: 0 2rem;
+  margin: 0.5rem 0;
+  font-size: 14px;
+  font-weight: 300;
+}
+form label {
+  font-size: large;
+  margin-top: 0.5rem;
+  padding: 1rem 0;
+}
+form p {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.btn-form {
+  display: block;
+  width: 100%;
+  border-radius: 3px;
+  margin: 1rem 0;
+}
+
+.btn-guest {
+  border: none;
+  padding: 1rem;
+  background-color: white;
+  font-weight: bolder;
+  color: #2b70e4;
+  text-align: center;
+  margin: auto;
+}
+
+.color {
+  color: whitesmoke;
+}
+
+.products-heading {
+  padding: 1rem;
+  padding-left: 5rem;
+  font-weight: 400;
+}
+@media screen and (min-width: 600px) {
+  .cart-quantity {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .container {
+    width: 60%;
+    margin: 1em auto;
+    padding: 1em;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    list-style: none;
+  }
+
+  .wishlist-icon {
+    fill: black;
+  }
+
+  .container-detail-content {
+    padding: 1rem;
+    width: 40%;
+    font-weight: normal;
+  }
+}

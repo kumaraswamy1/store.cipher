@@ -1,0 +1,47 @@
+.btn-div {
+  margin: 0.5rem;
+}
+.btn-div h4 {
+  font-size: larger;
+  font-weight: normal;
+  color: black;
+}
+.header-primary {
+  color: var(--primary-color);
+}
+.header-secondary {
+  color: black;
+}
+
+.header-image {
+  display: none;
+}
+.header-image {
+  width: 50px;
+  height: 50px;
+}
+header {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 600px) {
+  header {
+    flex-wrap: nowrap;
+  }
+  .header-image {
+    display: flex;
+    margin: 3rem;
+    padding-top: 4rem;
+    width: 500px;
+    height: 500px;
+  }
+  .header-content {
+    margin: 2rem;
+    font-size: 5.5rem;
+    font-weight: bold;
+    color: #ffc51e;
+  }
+  .btn-div {
+    margin: 2rem;
+  }
+}

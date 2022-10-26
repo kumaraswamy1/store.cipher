@@ -1,0 +1,8 @@
+.btn-viewPassword {
+  margin: 0.2rem;
+  background-color: transparent;
+  border: none;
+  position: fixed;
+  right: 3.5rem;
+  color: grey;
+}

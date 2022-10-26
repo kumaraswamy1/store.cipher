@@ -1,0 +1,27 @@
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 20rem;
+  background-color: rgba(255, 255, 255, 0.26);
+  margin: 4rem auto;
+  padding: 1rem;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 0.001em solid var(--primary-color);
+}
+.user-details {
+  display: flex;
+  flex-direction: row;
+}
+
+.user-details div {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  .username-display {
+    color: white;
+  }
+}

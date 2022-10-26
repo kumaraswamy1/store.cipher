@@ -1,0 +1,27 @@
+.header-container {
+  display: flex;
+  flex-direction: row;
+}
+.nav-list {
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem;
+}
+.nav-list a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.btn-outline {
+  background-color: var(--primary-color);
+  border: white;
+}
+.btn-outline a {
+  color: black;
+}
+.nav-list a:hover {
+  border-bottom: none;
+  color: white;
+  text-decoration: none;
+}
