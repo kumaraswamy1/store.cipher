@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { Password, Username } from "../../Components";
 import { useLogin } from "../../Context";
 
-export function UserLogin() {
+export function Login() {
   const {
     loginWithCredentials,
     state: { username, password },

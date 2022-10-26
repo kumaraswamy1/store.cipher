@@ -5,7 +5,7 @@ import jwt_decode from "jwt-decode";
 import { useCart, useLogin } from "../../Context";
 import { Logo } from "../../Assets/logo";
 
-export function UserProfile() {
+export function Profile() {
   const { state } = useCart();
 
   const {
