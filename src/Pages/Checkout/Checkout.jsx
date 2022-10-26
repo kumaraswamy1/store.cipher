@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import axios from "axios";
 import toast from "react-hot-toast";
 
-export const PayByRazorPay = ({ price }) => {
+export const Checkout = ({ price }) => {
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://checkout.razorpay.com/v1/checkout.js";

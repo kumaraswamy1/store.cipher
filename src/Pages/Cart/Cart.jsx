@@ -1,7 +1,7 @@
 import "./Cart.css";
 
 import { useCart } from "../../Context";
-import { PayByRazorPay } from "../Checkout/Payment";
+import { Checkout } from "../Checkout/Checkout";
 import { CartList } from "../../Components";
 
 export function Cart() {
@@ -35,7 +35,7 @@ export function Cart() {
       </div>
       <div className="price-container">
         <h1>Total Price : ₹ {totalPrices} </h1>
-        <PayByRazorPay price={totalPrices} />
+        <Checkout price={totalPrices} />
       </div>
     </div>
   );
