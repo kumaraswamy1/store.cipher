@@ -6,9 +6,9 @@ import {
   Cart,
   Products,
   ProductDetails,
-  UserProfile,
-  UserLogin,
-  UserRegister,
+  Profile,
+  Login,
+  Signup,
   NoMatch,
   Wishlist
 } from "./Pages";
@@ -26,14 +26,14 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="products" element={<Products />} />
         <Route path="products/:id" element={<ProductDetails />} />
-        <Route path="login" element={<UserLogin />} />
-        <Route path="signup" element={<UserRegister />} />
+        <Route path="login" element={<Login />} />
+        <Route path="signup" element={<Signup />} />
         <Route path="*" element={<NoMatch />} />
         <Route
           path="/user"
           element={
             <PrivateRoute>
-              <UserProfile />
+              <Profile />
             </PrivateRoute>
           }
         />

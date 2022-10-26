@@ -1,10 +1,10 @@
 export { Cart } from "./Cart/Cart";
 export { Home } from "./Home/Home";
-export { UserLogin } from "./Login/Login";
+export { Login } from "./Login/Login";
 export { NoMatch } from "./NoMatch//NoMatch";
 export { ProductDetails } from "./ProductDetails/ProductDetails";
 export { Products } from "./Products/Products";
-export { UserProfile } from "./Profile/Profile";
-export { UserRegister } from "./Signup/Signup";
+export { Profile } from "./Profile/Profile";
+export { Signup } from "./Signup/Signup";
 export { Wishlist } from "./Wishlist/Wishlist";
-export { Payment } from "./Checkout/Payment";
+export { Checkout } from "./Checkout/Checkout";
