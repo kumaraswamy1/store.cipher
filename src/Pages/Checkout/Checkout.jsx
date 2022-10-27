@@ -40,7 +40,7 @@ export const Checkout = ({ price }) => {
 				razorpay_order_id: response.razorpay_order_id,
 			};
 			(async () => {
-				const data = await axios.post(
+				const { data } = await axios.post(
 					"https://store-cipher-backend-1.kumaraswamya.repl.co/checkout/payment",
 					values
 				);
