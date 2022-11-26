@@ -44,7 +44,7 @@ export const Checkout = ({ price }) => {
 					"https://store-cipher-backend-1.kumaraswamya.repl.co/checkout/payment",
 					values
 				);
-				if (data.response.success) toast.success(data.response.message);
+				if (data.success) toast.success(data.message);
 			})();
 		},
 
