@@ -14,7 +14,7 @@ export const Checkout = ({ price }) => {
 		const {
 			data: { orderId, totalPrice },
 		} = await axios.post(
-			`https://store-cipher-backend-1.kumaraswamya.repl.co/checkout/order`,
+			`https://store-cipher-backend.onrender.com/checkout/order`,
 			{ amount: price }
 		);
 
