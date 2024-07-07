@@ -1,1 +1,1 @@
-export const baseURL = "https://store-cipher-backend.onrender.com/";
+export const baseURL = "https://store-cipher-backend.onrender.com";
