@@ -41,7 +41,7 @@ export const Checkout = ({ price }) => {
 			};
 			(async () => {
 				const { data } = await axios.post(
-					"https://store-cipher-backend-1.kumaraswamya.repl.co/checkout/payment",
+					"https://store-cipher-backend.onrender.com/checkout/payment",
 					values
 				);
 				if (data.success) toast.success(data.message);
