@@ -1,4 +1,5 @@
 import { useProduct } from "../../Context";
+import {useMemo} from "react";
 import { ProductCard, Categories } from "../../Components";
 import { getSortedData, getFilteredData } from "../../Utils/filterProducts";
 import "./Products.css";
@@ -12,7 +13,14 @@ export function Products() {
     state.searchValue
   );
 
-  const sortedProducts = getSortedData(filteredProducts, state.sortBy);
+ const sortedProducts = useMemo(() => getSortedData(filteredProducts, state.sortBy), [filteredProducts, state.sortBy]);
+
+  console.time('sortedProducts');
+  const productList = sortedProducts.length === 0
+  ? "No results to show."
+  : sortedProducts.map((item) => <ProductCard key={item._id} item={item} />);
+  console.timeEnd('sortedProducts');
+
   return (
     <div className="products-container">
       <Categories />
@@ -22,13 +30,7 @@ export function Products() {
         <div>
           <h1 className="products-heading">Products</h1>
           <div className="eCommerce-list products-content center ">
-            {sortedProducts.length === 0
-              ? "No results to show."
-              : sortedProducts?.map((item) => (
-                  <>
-                    <ProductCard key={item._id} item={item} />
-                  </>
-                ))}
+            {productList}
           </div>
         </div>
       )}
