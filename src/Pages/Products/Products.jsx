@@ -5,15 +5,21 @@ import { getSortedData, getFilteredData } from "../../Utils/filterProducts";
 import "./Products.css";
 export function Products() {
   const { state, loader } = useProduct();
-  const filteredProducts = getFilteredData(
-    state.data,
-    state.fastDelivery,
-    state.allInventory,
-    state.categories,
-    state.searchValue
+  const filteredProducts = useMemo(() => 
+    getFilteredData(
+      state.data,
+      state.fastDelivery,
+      state.allInventory,
+      state.categories,
+      state.searchValue
+    ), 
+    [state.data, state.fastDelivery, state.allInventory, state.categories, state.searchValue]
   );
-
- const sortedProducts = useMemo(() => getSortedData(filteredProducts, state.sortBy), [filteredProducts, state.sortBy]);
+  
+  const sortedProducts = useMemo(() => 
+    getSortedData(filteredProducts, state.sortBy), 
+    [filteredProducts, state.sortBy]
+  );
 
   console.time('sortedProducts');
   const productList = sortedProducts.length === 0
